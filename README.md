@@ -8,7 +8,7 @@ Install [Proxmox VE](https://www.proxmox.com/en/proxmox-ve).
 Set your Proxmox VE details:
 
 ```bash
-ccat >secrets-proxmox.sh <<EOF
+cat >secrets-proxmox.sh <<EOF
 export PROXMOX_URL='https://192.168.10.21:8006/api2/json'
 export PROXMOX_USERNAME='root@pam'
 export PROXMOX_PASSWORD='P@ssw0rd'
