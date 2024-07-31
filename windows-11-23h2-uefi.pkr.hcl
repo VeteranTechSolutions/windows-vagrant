@@ -120,7 +120,7 @@ source "proxmox-iso" "windows-11-23h2-uefi-amd64" {
   machine                  = "q35"
   bios                     = "ovmf"
   efi_config {
-    efi_storage_pool = "local-lvm"
+    efi_storage_pool = "local-zfs"
   }
   cpu_type = "host"
   cores    = 2
@@ -140,7 +140,7 @@ source "proxmox-iso" "windows-11-23h2-uefi-amd64" {
     ssd          = true
     discard      = true
     disk_size    = "${var.disk_size}M"
-    storage_pool = "local-lvm"
+    storage_pool = "local-zfs"
   }
   iso_storage_pool = "local"
   iso_url          = var.iso_url
