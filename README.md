@@ -137,10 +137,10 @@ Set your Proxmox VE details:
 
 ```bash
 cat >secrets-proxmox.sh <<EOF
-export PROXMOX_URL='https://192.168.1.21:8006/api2/json'
-export PROXMOX_USERNAME='root@pam'
-export PROXMOX_PASSWORD='vagrant'
-export PROXMOX_NODE='pve'
+PROXMOX_URL="https://192.168.10.20:8006/api2/json"
+PROXMOX_USERNAME="root@pam"
+PROXMOX_PASSWORD="P@ssw0rd"
+PROXMOX_NODE="pve"
 EOF
 source secrets-proxmox.sh
 ```
